@@ -10,7 +10,7 @@ For the rules in an augmented grammar, G’, begin at rule zero and follow the s
 ### State creation steps (big picture algorithm)
 1. Apply the start operation and
 2. complete the state:
-a. Use one read operation on each item C (non‐terminal or terminal) in the current state  
-to create more states.
-b. Apply the complete operation on the new states.
-c. Repeat steps  a  and  b  until no more new states can be formed.
+  * Use one read operation on each item C (non‐terminal or terminal) in the current state  
+  to create more states.
+  * Apply the complete operation on the new states.
+  * Repeat steps  a  and  b  until no more new states can be formed.
