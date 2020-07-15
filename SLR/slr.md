@@ -6,3 +6,11 @@ A simple document prepration of slr parse table
 
 ## Create the set of LR(0) states for the parse table
 For the rules in an augmented grammar, G’, begin at rule zero and follow the steps below:
+
+### State creation steps (big picture algorithm)
+1. Apply the start operation and
+2. complete the state:
+a. Use one read operation on each item C (non‐terminal or terminal) in the current state  
+to create more states.
+b. Apply the complete operation on the new states.
+c. Repeat steps  a  and  b  until no more new states can be formed.
