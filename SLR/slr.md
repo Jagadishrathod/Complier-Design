@@ -19,11 +19,14 @@ For the rules in an augmented grammar, G’, begin at rule zero and follow the s
 * A, S, X:  non‐terminals
 * w,x,y,z:  string of terminals and/or non‐terminals
 * C:  one terminal or one non‐terminal
-start:   if S is a symbol with [S ‐> w] as a production rule, then [S ‐> .w} is the item associated with the
+#### start:   
+if S is a symbol with [S ‐> w] as a production rule, then [S ‐> .w} is the item associated with the
 start state.
-read:   if [A ‐‐> x.Cz] is an item in some state, then [A ‐‐> xC.z] is associated with some other state.
+#### read:   
+if [A ‐‐> x.Cz] is an item in some state, then [A ‐‐> xC.z] is associated with some other state.
 When performing a read, all the items with the dot before the same C are associated with the same
 state. (Note that the dot is before anything, either terminal or non‐terminal.)
-complete:   if [A ‐‐> x.Xy] is an item, then every rule of the grammar with the form [X ‐‐> .z] must be
+#### complete:
+if [A ‐‐> x.Xy] is an item, then every rule of the grammar with the form [X ‐‐> .z] must be
 included within this state.  Repeat adding items until no new items can be added. (Note that the dot is
 before a non‐terminal.)
